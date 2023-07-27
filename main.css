@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+img {
+    display: block;
+}
+
+.container {
+    width: 1240px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 20px;
+}
+
+form {
+    padding: 100px;
+}
+
+.swich-input {
+    display: none;
+  }
+  
+  .swich-input:checked + .swich-controller {
+    /* background-color: green; */
+    background-image: url("./images/photo_2023-07-27_14-58-21.jpg");
+    background-size: 120px 60px;
+    background-repeat: no-repeat;
+  }
+  
+  .swich-input:checked + .swich-controller::before {
+    left: 65px;
+  }
+  
+  .swich-controller {
+    position: relative;
+    display: inline-block;
+    width: 120px;
+    height: 60px;
+    /* background-color: gray; */
+    background-image: url("./images/photo_2023-07-27_14-55-40.jpg");
+    background-size: 120px 60px;
+    background-repeat: no-repeat;
+    border-radius: 50px;
+    transition: background-color 0.5s ease;
+  }
+  
+  .swich-controller::before {
+    /* display: block; */
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: left 0.5s ease;
+    content: "";
+  }
+  
